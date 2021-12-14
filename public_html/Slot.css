@@ -30,7 +30,6 @@ button{
     border: solid black ;
     border-width: 2px;
 }
-#slots{
-    color: red;
-    
+#button1{
+    color: white;
 }

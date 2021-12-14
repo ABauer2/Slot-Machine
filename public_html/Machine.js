@@ -177,7 +177,7 @@ function cheater(){
         alert("Yep still clicking.");
     }
     else if (cheat>=10 && cheat<20){
-        alert("Still here?");
+        alert("Still here?...Yep, still here.");
     }
     else if (cheat===20){
         alert("TA DA! You won...");
@@ -188,4 +188,8 @@ function cheater(){
     else if (cheat>=23){
         alert("Play the game already.");
     }
+}
+function kenobi(){
+    alert("General Kenobi.");
+    document.getElementById("button1").style.color="red";
 }
