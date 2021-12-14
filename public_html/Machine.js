@@ -146,7 +146,7 @@ Winnings available: $"+current);
         document.getElementById("displayBet").innerHTML="Amount available: $"+current;
     }
 }
-//A fun little function
+//A fun little functions
 function cheater(){
     cheat++;
     if (cheat===1){
