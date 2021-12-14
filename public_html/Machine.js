@@ -5,6 +5,8 @@ var winnings=0;
 var totalBet=0;
 var current=0;
 var slot="";
+var games=0;
+var cheat=0;
 //Generates the 3 random symbols and stores them in a array.
 function randSymbol(){
     for(i=0;i<3;i++){
@@ -20,15 +22,20 @@ function leverPull(){
     if (bet==="Yzma"){
         document.getElementById("pullLever").innerHTML="Pull The Lever Kronk";
     }
+    if (bet===" "){
+        alert("working");
+    }
     else if (isNaN(bet)){
         document.getElementById("winnings").innerHTML="You must enter a numerical bet!";
     }
     else{
         document.getElementById("bet").disabled=true;
+        document.getElementById("pullLever").disabled=true;
         randSymbol();
         slotPictures();
         winner();
         reset();
+        games++;
     }
 }
 //Scans for the selected symbols and places them in the correct slots.
@@ -101,6 +108,7 @@ function playAgain(){
     if (again){
         alert("Playing dangerous.");
         document.getElementById("bet").disabled=false;
+        document.getElementById("pullLever").disabled=false;
         betChoice();
     }
     else{
@@ -110,7 +118,7 @@ function playAgain(){
 }
 //Displays stats of the game
 function totalWinnings(){
-    document.getElementById("total").innerHTML="Total money bet: $"+totalBet+"<br>Total money won: $"+winnings+"<br>Game Over! Reload page to play again!";
+    document.getElementById("total").innerHTML="Total money bet: $"+totalBet+"<br>Total money won: $"+winnings+"<br>Total games played: "+games+"<br>Game Over! Reload page to play again!";
 }
 //Asks the player if they want to use their current winnings or insert more money.
 function betChoice(){
@@ -136,5 +144,48 @@ Winnings available: $"+current);
         alert("You need to insert more money.");
         current=0;
         document.getElementById("displayBet").innerHTML="Amount available: $"+current;
+    }
+}
+//A fun little function
+function cheater(){
+    cheat++;
+    if (cheat===1){
+        alert("No cheating.");
+    }
+    else if (cheat===2){
+        alert("I said no cheating.");
+    }
+    else if (cheat===3){
+        alert("This won't work.");
+    }
+    else if (cheat===4){
+        alert("Stop clicking.");
+    }
+    else if (cheat===5){
+        alert("You really think this will work?");
+    }
+    else if (cheat===6){
+        alert("I told you it wont work.");
+    }
+    else if (cheat===7){
+        alert("How long are you going to try this?");
+    }
+    else if (cheat===8){
+        alert("This won't give you anything special.");
+    }
+    else if (cheat===9){
+        alert("Yep still clicking.");
+    }
+    else if (cheat>=10 && cheat<20){
+        alert("Still here?");
+    }
+    else if (cheat===20){
+        alert("TA DA! You won...");
+    }
+    else if (cheat===21){
+        alert("nothing. You won nothing.");
+    }
+    else if (cheat>=23){
+        alert("Play the game already.");
     }
 }
