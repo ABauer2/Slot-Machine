@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Slot Machine</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Slot.css"/>
+        <script src="Machine.js"></script>
+    </head>
+    <body>
+        <div id="lever">
+            <h1 id="displayBet">Enter Your Starting Bet:</h1>
+            $<input type="text" id="bet">
+            <br>
+            <br>
+            <button id="pullLever" onclick="leverPull()">Pull Lever</button>
+            <br>
+            <br>
+            <button id="again" onclick="playAgain()" disabled>Play Again</button>
+            <button id="end" onclick="endGame()" disabled>End Game</button>
+        </div>
+        <hr>
+        <div id="slots">
+            <img id="slot0" src="bar.jpg" alt="Bar"><img id="slot1" src="bar.jpg" alt="Bar"><img id="slot2" src="bar.jpg" alt="Bar">
+        </div>
+        <hr>
+        <div id="winnings">
+            
+        </div>
+        <br>
+        <div id="total">
+            
+        </div>
+    </body>
+</html>

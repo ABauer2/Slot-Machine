@@ -1,0 +1,32 @@
+body{
+    text-align:center;
+}
+img{
+    border: solid black;
+    border-radius:20px;
+    margin-right: 5px;
+}
+#winnings,#total{
+    font-size:75px;
+    
+}
+button{
+    height:50px;
+    width:150px;
+    border-radius:20px;
+    cursor: pointer;
+}
+#bet{
+    height:25px;
+    width:auto;
+}
+#pullLever{
+    background-color: red;
+    color: white;
+}
+#end,#again{
+    background-color: #00ff19;
+    color: black;
+    border: solid black ;
+    border-width: 2px;
+}
